@@ -6,7 +6,7 @@ p:first-child:first-letter { float: left; color: #000; font-size: 62px; line-hei
 
 html, body, div, p, ul, ol, li, form, fieldset, h1, h2, h3, h4, h5, h6, address   { margin: 0; padding: 0; list-style: none; }
 
-html {background-color: #bbd6ed; }
+html {background-color:#e2e2e2;} /*#bbd6ed rgba(#000, .5);  */
 body		        { font: normal 50%/1.3 verdana, trebuchet, sans-serif; color: #000000/*body text color*/; 
 	padding-bottom: 50px; 
 	/*background: url('../images/bg-body.png') 20% 0 no-repeat; background-size: 100%; background-attachment:fixed;*/}
@@ -30,7 +30,7 @@ h4	{ font-size: 1.3em; }
 h5	{ font-size: 1.2em; }
 h6	{ font-size: 1em; }
 
-h1, h2, h3, h4, h5, h6  { color: #01191a} /* heading font colors */
+h1, h2, h3, h4, h5, h6  { color: #000} /* heading font colors */
 
 table           { border-collapse: collapse; width: 100%; }
 table th        { text-align: left; }
@@ -82,12 +82,13 @@ border-radius: 10px;}
 .formBox .con			      { float: right; width: 80%; }
 .formBox .button:focus  { border-color: #000; }
 
-.button { border-top: 1px solid #000334; background: #303030; background: -webkit-gradient(linear, left top, left bottom, from(#959595), to(#303030)); background: -webkit-linear-gradient(top, #959595, #303030); background: -moz-linear-gradient(top, #959595, #303030); background: -ms-linear-gradient(top, #959595, #303030); background: -o-linear-gradient(top, #959595, #303030); padding: 5px 10px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0; -moz-box-shadow: rgba(0,0,0,1) 0 1px 0; box-shadow: rgba(0,0,0,1) 0 1px 0; text-shadow: rgba(0,0,0,.4) 0 1px 0; color: white; font-size: 14px; font-family: Georgia, serif; text-decoration: none; vertical-align: middle; }
+.button { border-top: 1px solid #7f7f7f; background: #1a1a1a; background: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#666666)); background: -webkit-linear-gradient(top, #1a1a1a, #666666); background: -moz-linear-gradient(top, #1a1a1a, #666666); background: -ms-linear-gradient(top, #1a1a1a, #666666); background: -o-linear-gradient(top, #1a1a1a, #666666); padding: 5px 10px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0; -moz-box-shadow: rgba(0,0,0,1) 0 1px 0; box-shadow: rgba(0,0,0,1) 0 1px 0; text-shadow: rgba(0,0,0,.4) 0 1px 0; color: white; font-size: 14px; font-family: Georgia, serif; text-decoration: none; vertical-align: middle; }
 .button:hover { border-top-color: #303030; background: -moz-linear-gradient(#303030,  #959595); background: -webkit-gradient(linear, left top, left bottom, from(#303030), to(#959595)); background: -webkit-linear-gradient(#303030,  #959595); background: -o-linear-gradient(#959595,  #303030); background: -ms-linear-gradient(#303030,  #959595); background: linear-gradient(#303030,  #959595); text-decoration: none !important; color: #cccccc; }
-.button:active { border-top-color: #b9090b; background: #b9090b; }
+.button:active { border-top-color: #959595; background: #959595; }
 
 /* -- Layout -- */
 #indent { padding: 25px; text-decoration: none !important; }
+#pindent { padding-left:50px; } 
 #view         { width: 954px; margin: 0 auto; padding: 0 9px; background: url('../images/bg-shadow2.png') 0 65px no-repeat; }
 #head         { height: 167px; }
 #menu         {  z-index: 1; position: absolute; top: 76px; left: 10px; width: 949px; height: 84px; background: url('../images/bg-menu.png') repeat-x;
@@ -211,7 +212,7 @@ border-radius: 10px;position: relative; width: 554px; padding: 20px 28px 0; marg
 #contentBlock .item .subheader { margin-bottom: 25px !important; padding: 0; }
 #contentBlock .item .subheader a  { color: #bbd6ed; } /*sub header font color*/
 #contentBlock .item .date { position: absolute; top: 16px; right: 16px; width: 80px; height: 23px; text-align: center; font-size: 1.4em; color: #dcd7c8; padding-top: 6px; background: url('../images/bg-item_date.png') no-repeat; }
-#contentBlock .item .in  { z-index: 1; color: b9090b; overflow: hidden; padding-bottom: 35px; /*background: url('../images/bg-item_separator.png') 50% 100% no-repeat; */}
+#contentBlock .item .in  { z-index: 1; color: afafaf; overflow: hidden; padding-bottom: 35px; /*background: url('../images/bg-item_separator.png') 50% 100% no-repeat; */}
 #contentBlock .last .in  { background: none !important; }
 #contentBlock .item .in img,
 #contentBlock .item .in a img  { border: 3px #bbd6ed solid; position: relative; }

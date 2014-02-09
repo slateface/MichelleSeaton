@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+<head>
+	<title>Contact Michelle Seaton</title>
+	
+	<!-- script for vaidating the form-->
+	<script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
+	
+	<!--meta-->
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content=""  />
+    <meta name="keywords" content="" />
+    <meta name="language" content="cs" />
+   
+	<!-- css style sheet links -->
+    <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" media="screen"  />  
+	
+</head>
+
+
+<body>
+<div id="view">
+	<div id="head">
+        <h1 id="logotype">Michelle Seaton</h1>
+	</div><!-- // Header -->
+
+  <hr class="hidden" />
+	
+	<div id="menu">
+		<ul id="mainMenu">
+			<li><strong>Contact Form</strong>
+			</li>
+		</ul>
+	</div>
+
+<hr class="hidden noprint" />
+	
+	<div id="content">
+		
+		<h2 class="subheader">Please Send Us Your Questions and/or Comments!</h2>
+		<!-- Start code for the form-->
+		<form method="post" name="myemailform" action="php/form-to-email.php">
+		
+			<div class="item">
+				<p>
+					<label for='name'>Enter Name: </label><br>
+					<input type="text" name="name">
+				</p>
+			</div>
+			
+			<br /><br />
+			
+			<div class="item">
+			<p>
+				<label for='email'>Enter Email Address:</label><br>
+				<input type="text" name="email">
+			</p>
+			
+			<br /><br />
+			
+			</div>
+			<div class="item">
+				<p>
+					<label for='message'>Enter Message:</label> <br>
+					<textarea name="message"></textarea>
+				</p>
+			</div>
+			<input type="submit" name='submit' value="submit">
+		
+		</form>
+			
+	</div><!--class item-->
+			
+		
+	
+		<script language="JavaScript">
+		// Code for validating the form
+		// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+		// for details
+		var frmvalidator  = new Validator("myemailform");
+		frmvalidator.addValidation("name","req","Please provide your name"); 
+		frmvalidator.addValidation("email","req","Please provide your email"); 
+		frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+		</script>
+ <hr class="hidden" />
+<div id="rightBlock">
+<div class="box submenu">	
+	<h3 class="subheader">Thank you!</h3>
+</div><!--box-->
+</div><!--rightBlock-->
+</div><!--content -->
+
+<!-- Web footer -->
+      <div id="foot">
+			<ul class="support">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>        
+			
+			<ul class="menu">
+				<li><a href="http://www.rotary.org/en/Pages/ridefault.aspx" class="button">Rotary International</a></li>
+				<li><a href="JavaScript:newPopup('form.html');" class="button">Contact</a></li>
+			</ul>
+			<br /><p class="copy small">Copyright 2012 - Michelle Seaton</p>
+		</div><!-- // Foot -->
+
+</div><!--view-->
+</body>
+</html>
