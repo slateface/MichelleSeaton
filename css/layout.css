@@ -6,7 +6,7 @@ p:first-child:first-letter { float: left; color: #000; font-size: 62px; line-hei
 
 html, body, div, p, ul, ol, li, form, fieldset, h1, h2, h3, h4, h5, h6, address   { margin: 0; padding: 0; list-style: none; }
 
-html {background-color:#e2e2e2;} /*#bbd6ed rgba(#000, .5);  */
+html {background-color:#e2e2e2;} 
 body		        { font: normal 50%/1.3 verdana, trebuchet, sans-serif; color: #000000/*body text color*/; 
 	padding-bottom: 50px; 
 	/*background: url('../images/bg-body.png') 20% 0 no-repeat; background-size: 100%; background-attachment:fixed;*/}
@@ -58,7 +58,7 @@ fieldset    { border: 0 !important; }
 border-radius: 10px;}
 
 /* -- Main classes -- */
-.frbm		     { float: right !important; padding-top: 10px; padding-right: 15px; text-align: center !important; }
+.frbm		     { float: right !important; padding-top: 10px; padding-right: 15px; text-align: center !important; opacity: 1.0;}
 .fl		     { float: left !important; }
 .clear     { clear: both !important; }
 .right	   { text-align: right !important; }

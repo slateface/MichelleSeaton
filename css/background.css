@@ -15,7 +15,6 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    color: #b9090b;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
@@ -91,43 +90,42 @@
     -webkit-animation-timing-function: ease-in; }
     40% { opacity: 1;
          -webkit-animation-timing-function: ease-out; }
-    60% { opacity: 1 }
-    /*25% { opacity: 0 }*/
-    100% { opacity: 0 }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
 }
 @-moz-keyframes imageAnimation { 
     0% { opacity: 0;
     -moz-animation-timing-function: ease-in; }
     8% { opacity: 1;
          -moz-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
 }
 @-o-keyframes imageAnimation { 
     0% { opacity: 0;
     -o-animation-timing-function: ease-in; }
     8% { opacity: 1;
          -o-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
 }
 @-ms-keyframes imageAnimation { 
     0% { opacity: 0;
     -ms-animation-timing-function: ease-in; }
     8% { opacity: 1;
          -ms-animation-timing-function: ease-out; }
-    17% { opacity: 1 }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+    17% { opacity: 1; }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
 }
 @keyframes imageAnimation { 
     0% { opacity: .0;
     animation-timing-function: ease-in; }
-    8% { opacity: 1 }
+    8% { opacity: 1; }
     17% { opacity: 1;
          animation-timing-function: ease-out; }
-    25% { opacity: 0 }
-    100% { opacity: 0 }
+    25% { opacity: 0; }
+    100% { opacity: 0; }
 }
