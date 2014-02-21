@@ -47,7 +47,7 @@ fieldset    { border: 0 !important; }
 .noscreen { width: 200px; position: absolute; left: -9999px; top: -9999px; }
 
 /* -- Basics layout -- */
-#opaque {opacity: .4;} /* maximum opacity of the background slideshow */
+#opaque {opacity: 1;} /* maximum opacity of the background slideshow */
 #view     { position: relative; }
 #head     { font-size: 1.2em; position: relative; /*z-index: 0;*/ }
 #content  { font-size: 1.8em; padding:15px;}
