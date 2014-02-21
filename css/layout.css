@@ -12,6 +12,10 @@ body		        { font: normal 50%/1.3 verdana, trebuchet, sans-serif; color: #000
 	/*background: url('../images/bg-body.png') 20% 0 no-repeat; background-size: 100%; background-attachment:fixed;*/}
 a			          { color: #b9090b; }
 a:hover	        { color: #ffffff !important; text-decoration: underline !important; }
+
+#bodyLink a			          { color: #b9090b; }
+#bodyLink a:hover	        { color: #000033 !important; text-decoration: underline !important; }
+
 a img   	      {  border: 0 none; padding: 0px 5px; vertical-align: top; }
 input,
 select,
@@ -47,7 +51,6 @@ fieldset    { border: 0 !important; }
 .noscreen { width: 200px; position: absolute; left: -9999px; top: -9999px; }
 
 /* -- Basics layout -- */
-#opaque {opacity: 1;} /* maximum opacity of the background slideshow */
 #view     { position: relative; }
 #head     { font-size: 1.2em; position: relative; /*z-index: 0;*/ }
 #content  { font-size: 1.8em; padding:15px;}
@@ -88,7 +91,7 @@ fieldset    { border: 0 !important; }
 #pindent { padding-left:50px; } 
 #view         { width: 954px; margin: 0 auto; padding: 0 9px; background: url('../images/bg-shadow2.png') 0 65px no-repeat; }
 #head         { height: 167px; }
-
+#hoverRed {color: #b9090b}
 #content   { padding: 10px 10px 10px 10px; margin-bottom: 3px; overflow: hidden; 
 position: relative;
 border: 2px solid black;
@@ -212,8 +215,6 @@ border-radius: 10px;position: relative; width: 554px; padding: 20px 28px 0; marg
 
 #contentBlock li a { color: #000; }
 
-
-#contentBlock .item .in a:hover img { }
 #contentBlock .item .in img { margin: 0 6px 15px 0; }
 #contentBlock .item .in img.left    { float: left; margin: 0 15px 10px 0; }
 #contentBlock .item .in img.right   { float: right; margin: 0 0 10px 15px; }
