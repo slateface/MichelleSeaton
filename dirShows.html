@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
 
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content=""  />
@@ -19,6 +20,44 @@
 				url,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 		}
 	</script>
+	
+	<style type="text/css">
+
+		.thumbnail{
+		position: relative;
+		z-index: 0;
+		}
+
+		.thumbnail:hover{
+		background-color: transparent;
+		z-index: 50;
+		}
+
+		.thumbnail span{ /*CSS for enlarged image*/
+		position: absolute;
+		background-color: lightyellow;
+		padding: 5px;
+		left: -1000px;
+		border: 3px ridge black;
+		visibility: hidden;
+		color: black;
+		text-decoration: none;
+		}
+
+		.thumbnail span img{ /*CSS for enlarged image*/
+		border-width: 0;
+		padding: 2px;
+		}
+
+		.thumbnail:hover span{ /*CSS for enlarged image on hover*/
+		visibility: visible;
+		top: 0;
+		left: -50px; /*position where enlarged image should offset horizontally */
+		top: 10px;
+		}
+
+	</style>
+	
 </head>
   
 <body>
@@ -48,7 +87,7 @@
 					<ul id="mainMenuSub">
 						<li><a href="dirShows.html">Shows</a></li>
 						<li><a href="dirReviews.html">Reviews</a></li>
-						<li><a href="dirRecommendations.html">Recommendations </a></li>
+						<li><a href="recommendations.html">Recommendations </a></li>
 					</ul>
 				</li>									<!--//director tab-->
 				
@@ -56,14 +95,14 @@
 					<ul id="mainMenuSub">
 						<li><a href="actShows.html">Shows</a></li>
 						<li><a href="actReviews.html">Reviews</a></li>
-						<li><a href="actRecommendations.html">Recommendations</a></li>
+						<li><a href="recommendations.html">Recommendations</a></li>
 					</ul>
 				</li>									<!--//actor tab -->
 				
 				<li><a href="teacher.html"><div id="padTen">Teacher</div></a>	<!--teaching tab -->
 					<ul id="mainMenuSub">
-						<li><a href="cv">CV</a></li>
-						<li><a href="teachRecommendations">Recommendations</a></li>
+						<li><a href="cv.html">CV</a></li>
+						<li><a href="recommendations.html">Recommendations</a></li>
 					</ul>
 				</li>									<!--//teaching tab -->
 
@@ -87,38 +126,135 @@
 			  
 														<!-- Main content -->
 		<div id="content">								<!-- Left content part -->
-			<div id="contentBlock">
-				<h2 class="subheader biggest">Let an award winning Director work for you...</h2>
-				<div class="item first">				<!--item 1-->
+			<div id="contentBlockPhoto">
+				<h2 class="subheader biggest">Various Production Images...</h2><br /><br />
+				<!--<div class="item first">				item 1
 					<div class="in">
-						<p>Michelle currently teaches acting at University of Portland, Linfield College, George Fox University as well as teaches the Meisner Technique at the Portland Actors Conservatory. She is an award winning director who has moved back to Portland, Oregon after living in New York/New Jersey for eight years. During her stay there she founded and served as the Artistic Director for Dark Luna Productions. In 2009, Michelle graduated from Mason Gross School of the Arts, Rutgers University with an MFA in Directing. Some directing credits include Off Off Broadway Us Vs. Them and Passage,  Drammy award winning ElectroPuss, The House of Bernarda Alba, Weeping Woman, Thrust, The Flu Season, Cloud Tectonics, Voir Dire, Dog Sees God and Stop Kiss. Michelle is the recipient of the Kennedy Center American College “Meritorious Achievement in Direction” for the production of UMW. She has directed over 25 new plays and has worked in theatres such as Ensemble Studio Theatre, St. Louis Repertory, The Eugene O’Neill Center, the American Globe Theatre, Stark Raving Theatre and Vertigo Theatre. Prior to graduate school Michelle was the Resident Director and Actor for Stark Raving Theatre in Portland, OR.  Michelle is a graduate from Portland Actors Conservatory and holds a double BA in Theatre and Communication from Linfield College. She is also a member of Stage Directors and Choreographers Society.</p>
+						<h4>Something about this and that</h4>
 					</div> 
-				</div>								
-			  
-				<!--<div class="item">						
-					<h3 class="subheader"><a href="">Actor</a></h3>
-						<div class="in">
-							When I first read Walking Shadows, I was struck by this remark above. It kept coming back to me throughout the rehearsal process. The expression “living in the moment,” is an easy concept to embrace, however more often than not, outside forces distract us from what is right in front of us. Breaking free of the past, possible guilt and the mistakes we make can be a heavy burden to carry throughout life and prevent us from “living in the moment.”
-						</div>
-				</div>									
+				</div>		-->	
 				
+									
+					<h3 class="subheader"><p id="drop">Cloud Tectonics</p></h3>
+						<p id="pindent">photos by Larry Levanti</p>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/cloudTectonics/17_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/cloudTectonics/17_1.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/cloudTectonics/29_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/cloudTectonics/29_1.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/cloudTectonics/47_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/cloudTectonics/47_1.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/cloudTectonics/72_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/cloudTectonics/72_1.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/cloudTectonics/75_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/cloudTectonics/75_1.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/cloudTectonics/80_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/cloudTectonics/80_1.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/cloudTectonics/28_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/cloudTectonics/28_1.jpg" /><br /></span></a>
+					<br /><br /></p>
+					
+					<h3 class="subheader"><p id="drop">Cold Comedy Concoction</p></h3>
+						<p id="pindent">photos by Siouxsie Suarez</p>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/coldComedy/32_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/coldComedy/32.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/coldComedy/34_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/coldComedy/34.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/coldComedy/40_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/coldComedy/40.jpg" /><br /></span></a>
+						</p>
+					<br /><br />
+
+					<h3 class="subheader"><p id="drop">Dog Sees God</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/dogSeesGod/96_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/96.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/119_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/119.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/155_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/155.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/dogSeesGod/186_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/186.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/237_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/237.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/319_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/319.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/dogSeesGod/339_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/339.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/345_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/345.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/434_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/434.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/dogSeesGod/397_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/397.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/542_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/542.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/476_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/dogSeesGod/476.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/dogSeesGod/229_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/dogSeesGod/229.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/367_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/dogSeesGod/367.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/dogSeesGod/368_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/dogSeesGod/368.jpg" /><br /></span></a>
+						</p>
+					<br /><br />
 				
-				<div class="item">						
-					<h3 class="subheader"><a href="">Teacher</a></h3>
-						<div class="in">
-							we breifly describe your approach to teaching.
-						</div>
-				</div>		
-				
-			  
-				<div class="item last">					
-					<h3 class="subheader"><a href="">Even More Content</a></h3>
-						<div class="in">
-							content item #3
-						</div>
-				</div>-->
-				<!-- // Item -->
-				
+					<h3 class="subheader"><p id="drop">Egyptology</p></h3>
+						<p id="pindent">photos by Larry Levanti</p>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/egyptology/10_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/egyptology/10.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/49_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/egyptology/49.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/78_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/egyptology/78.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/egyptology/172_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/egyptology/172.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/241_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/egyptology/241.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/259_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/egyptology/259.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/egyptology/18_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/18.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/26_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/26.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/100_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/100.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/226_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/226.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/egyptology/239_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/239.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/261_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/261.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/325_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/325.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/egyptology/380_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/egyptology/380.jpg" /><br /></span></a>
+						</p><br /><br />
+					
+					<!--<h3 class="subheader"><p id="drop">Electropus</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/electropus/4_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/electropus/4.jpg" /><br /></span></a>
+						</p><br /><br />		-->			
+					
+					<h3 class="subheader"><p id="drop">Feeding the Moonfish</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/moonfish/24_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/moonfish/24.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/moonfish/4_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/moonfish/4.jpg" /><br /></span></a>
+						</p><br /><br />
+						
+					<!--<h3 class="subheader"><p id="drop">Flu Season</p></h3>
+						<p id="pindent">photos by Siouxsie Suarez</p>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/fluSeason/4_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/electropus/4.jpg" /><br /></span></a>
+						</p><br /><br />		-->	
+													
+					<h3 class="subheader"><p id="drop">Marshalls Law</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/marshallsLaw/10_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/marshallsLaw/10.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/marshallsLaw/29_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/marshallsLaw/29.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/marshallsLaw/31_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/marshallsLaw/31.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/marshallsLaw/16_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/marshallsLaw/16.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/marshallsLaw/20_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/marshallsLaw/20.jpg" /><br /></span></a>
+						</p><br /><br />
+								
+					<h3 class="subheader"><p id="drop">Rosemary with Ginger</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/RWG/15_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/RWG/15.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/RWG/853_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/RWG/853.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/RWG/860_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/RWG/860.jpg" /><br /></span></a>
+						</p><br /><br />
+						
+					<h3 class="subheader"><p id="drop">Stop Kiss</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/stopKiss/225_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/stopKiss/225.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/stopKiss/212_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/stopKiss/212.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/stopKiss/236_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/stopKiss/236.jpg" /><br /></span></a>
+						</p><br /><br />
+						
+					<h3 class="subheader"><p id="drop">Walking Shadows</p></h3>
+						<p id="pindent">photos by Larry Levanti</p>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/walkingShadows/14_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/walkingShadows/14.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/37_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/walkingShadows/137.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/88_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/walkingShadows/88.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/walkingShadows/100_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/walkingShadows/100.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/walkingShadows/4_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/4.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/21_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/21.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/23_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/23.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/60_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/60.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/walkingShadows/156_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/156.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/189_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/189.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/walkingShadows/192_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/walkingShadows/192.jpg" /><br /></span></a>
+						</p><br /><br />
+						
+					<h3 class="subheader"><p id="drop">Weeping Woman</p></h3>
+						<p id="pindent">photos by Siouxsie Suarez</p>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/weepingWoman/86_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/weepingWoman/86.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/weepingWoman/99_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/weepingWoman/99.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/weepingWoman/17_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/weepingWoman/17.jpg" /><br /></span></a>
+						</p><br /><br />
+						
+					<h3 class="subheader"><p id="drop">Wilde Abandon</p></h3>
+						<p id="pindent"><a class="thumbnail"><img src="img/directing/wildeAbandon/5_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/wildeAbandon/5.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/wildeAbandon/33_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/wildeAbandon/33.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/wildeAbandon/83_thumb.jpg" width="144px" height="96px" border="0" /><span><img src="img/directing/wildeAbandon/83.jpg" /><br /></span></a>
+						<br /><br /><a class="thumbnail"><img src="img/directing/wildeAbandon/25_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/wildeAbandon/25.jpg" /><br /></span></a>
+						<a class="thumbnail"><img src="img/directing/wildeAbandon/70_thumb.jpg" width="96px" height="144px" border="0" /><span><img src="img/directing/wildeAbandon/70.jpg" /><br /></span></a>
+						</p><br /><br />
+						<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			</div><!--//contentBlock-->
 
 			<hr class="hidden" />
