@@ -3,7 +3,7 @@
 /*paragraph font style*/
 p{color: #000; text-shadow: 2px 2px 5px #777; font-size: 1.1em;}
 #drop:first-child:first-letter { float: left; color: #000; font-size: 62px; line-height: 60px;  font-family: Georgia; padding: -4px 0 2px 0 ;}
-#drop {padding: 4px 0 0 2px; }
+#drop {padding: 15px 0 0 2px; }
 html, body, div, p, ul, ol, li, form, fieldset, h1, h2, h3, h4, h5, h6, address   { margin: 0; padding: 0; list-style: none; }
 
 html {background-color:#e2e2e2;} 
@@ -87,7 +87,7 @@ fieldset    { border: 0 !important; }
 .button:active { border-top-color: #959595; background: #959595; }
 
 /* -- Layout -- */
-#indent { padding: 25px; text-decoration: none !important; }
+#indent { padding: 0 25px; }
 #pindent { padding-left:50px; } 
 #view         { width: 954px; margin: 0 auto; padding: 0 9px; background: url('../images/bg-shadow2.png') 0 65px no-repeat; }
 #head         { height: 167px; }
@@ -115,8 +115,8 @@ text-shadow: 10px 5px 10px #aaa}
 	text-decoration: bold !important; vertical-align: middle; 
 	text-shadow: 5px 5px 10px #000, -5px -5px 10px #777;}
 
-
-
+#bottomPad {padding: 0 0 50px;}
+#bottomPadLast {padding: 0 0 200px;}
 /* begin Menu and drop down menu*/
 #mainMenu             { color: #ffffff; position: relative; top: 42px; left: 0; height: 42px; padding: 0 28px; text-align: center; 
 text-decoration: none !important; vertical-align: middle; 
