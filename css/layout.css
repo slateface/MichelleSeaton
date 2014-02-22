@@ -3,7 +3,7 @@
 /*paragraph font style*/
 p{color: #000; text-shadow: 2px 2px 5px #777; font-size: 1.1em;}
 #drop:first-child:first-letter { float: left; color: #000; font-size: 62px; line-height: 60px;  font-family: Georgia; padding: -4px 0 2px 0 ;}
-#drop {padding: 15px 0 0 2px; }
+#drop {padding: 0 0 20px 2px; }
 html, body, div, p, ul, ol, li, form, fieldset, h1, h2, h3, h4, h5, h6, address   { margin: 0; padding: 0; list-style: none; }
 
 html {background-color:#e2e2e2;} 
