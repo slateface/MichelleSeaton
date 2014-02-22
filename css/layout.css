@@ -2,8 +2,8 @@
 
 /*paragraph font style*/
 p{color: #000; text-shadow: 2px 2px 5px #777; font-size: 1.1em;}
-#drop:first-child:first-letter { float: left; color: #000; font-size: 62px; line-height: 60px; padding-top: 4px; padding-right: 2px; padding-left: 3px; font-family: Georgia; }
-
+#drop:first-child:first-letter { float: left; color: #000; font-size: 62px; line-height: 60px;  font-family: Georgia; padding: -4px 0 2px 0 ;}
+#drop {padding: 4px 0 0 2px; }
 html, body, div, p, ul, ol, li, form, fieldset, h1, h2, h3, h4, h5, h6, address   { margin: 0; padding: 0; list-style: none; }
 
 html {background-color:#e2e2e2;} 
@@ -13,8 +13,8 @@ body		        { font: normal 50%/1.3 verdana, trebuchet, sans-serif; color: #000
 a			          { color: #b9090b; }
 a:hover	        { color: #ffffff !important; text-decoration: underline !important; }
 
-#bodyLink a			          { color: #b9090b; }
-#bodyLink a:hover	        { color: #000033 !important; text-decoration: underline !important; }
+#bodyLink a			          { color: #b9090b; font-weight: bold;}
+#bodyLink a:hover	        { color: #000033 !important; font-weight: bold;}
 
 a img   	      {  border: 0 none; padding: 0px 5px; vertical-align: top; }
 input,
