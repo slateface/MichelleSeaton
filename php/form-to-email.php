@@ -21,12 +21,12 @@ if(IsInjected($visitor_email))
     exit;
 }
 
-$email_from = 'slateface@gmail.com';//<== update the email address
+$email_from = 'michellelseaton@gmail.com';//<== update the email address
 $email_subject = "Message from MichelleSeaton.org";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\n $message".
     
-$to = "slateface@gmail.com";//<== update the email address
+$to = "michellelseaton@gmail.com";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
